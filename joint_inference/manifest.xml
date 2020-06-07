@@ -1,0 +1,16 @@
+<package>
+  <description brief="joint_inference">
+
+     joint_inference
+
+  </description>
+  <author>Dopey</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/joint_inference</url>
+  
+  <depend package="sm_common" />
+
+</package>
+
+

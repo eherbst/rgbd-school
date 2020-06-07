@@ -1,0 +1,20 @@
+<package>
+  <description brief="flow_slam">
+
+     flow_slam
+
+  </description>
+  <author>Evan</author>
+  <license>n/a</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/flow_slam</url>
+  
+  <depend package="xforms" />
+  <depend package="rgbd_flow" />
+  <depend package="rgbd_frame_common" />
+  <depend package="moseg_common" />
+  <depend package="range_image_icp" />
+
+</package>
+
+

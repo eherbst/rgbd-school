@@ -1,0 +1,27 @@
+<package>
+  <description brief="active_obj_modeling">
+
+     active_obj_modeling
+
+  </description>
+  <author>Evan</author>
+  <license>n/a</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/active_obj_modeling</url>
+
+  <depend package="openni_utils" />
+  <depend package="peter_intel_mapping_utils" />
+  <depend package="scene_differencing" />
+  <!-- <depend package="zachflow" /> -->
+  <depend package="rgbd_flow" />
+  <depend package="openrave_utils" />
+  <depend package="active_vision_common" />
+  <depend package="orcdchomp" /> <!-- normal CHOMP + Arun's T-CHOMP -->
+  <depend package="spheretree" /> <!-- for fitting spheres to 3-d shapes -->
+  <depend package="zachflow" />
+  <!-- <depend package="optical_flow_utils" /> -->
+  <depend package="cuda_util" />
+
+</package>
+
+

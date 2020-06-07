@@ -1,0 +1,17 @@
+comp = { C0_0 C0_1 C0_2 C0_3 C0_4 C0_5 C0_6 C0_7 C0_8 C0_9 C0_10 C0_11 C0_12 C0_13 C0_14 C0_15 C0_16 C0_17 C0_18 C0_19 C0_20 C0_21 C0_22 C0_23 C0_24 C0_25 C0_26 C0_27 C0_28 C0_29 C0_30 C0_31 C1_0 C1_1 C1_2 C1_3 C1_4 C1_5 C1_6 C1_7 C1_8 C1_9 C1_10 C1_11 C1_12 C1_13 C1_14 C1_15 C1_16 C1_17 C1_18 C1_19 C1_20 C1_21 C1_22 C1_23 C1_24 C1_25 C1_26 C1_27 C1_28 C1_29 C1_30 C1_31 }
+oid = { O0 O1 }
+
+sameScene(comp,comp)
+segNbrs(comp,comp)
+corrProposed(comp,comp)
+corrsIncompatible(comp,comp,comp,comp)
+obj(comp,oid!)
+corr(comp,comp!)
+
+1 segNbrs(s,t) => (obj(s,o) <=> obj(t,o))
+!corrProposed(s,t) => !corr(s,t).
+0.2 corrProposed(s,t) => corr(s,t)
+-0.1 corr(s,t)
+corr(s,t) => corr(t,s).
+corr(s,t) ^ obj(s,o) => obj(t,o).
+corrsIncompatible(s,t,u,v) => !(obj(s,o) ^ obj(u,o) ^ corr(s,t) ^ corr(u,v)).
